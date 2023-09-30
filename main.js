@@ -593,13 +593,40 @@
 // withdraw(100, 300);
 
 
+                                    // Mentor practice
+// 01
+// const min = parseInt(prompt('введіть число'));
+// if (min <= 15) {
+//   console.log('Перша чверть');
+// } else if (min <= 30) {
+//   console.log('Друга чверть');
+// } else if (min <= 45) {
+//   console.log('Третя чверть');
+// } else  if (min <= 60){
+//   console.log('Четверта чверть');
+// } else {
+//   console.log('Невірно');
+// }
 
 
-
-
-
-
-
+// 02
+// const min = parseInt(prompt('введіть число'));
+// switch (true) {
+//   case (min <= 15):
+//     console.log('Перша чверть');
+//     break;
+//   case (min <= 30):
+//     console.log('Друга чверть');
+//     break;
+//   case (min <= 45):
+//     console.log('Третя чверть');
+//     break;
+//   case (min <= 60):
+//     console.log('Четверта чверть');
+//     break;
+//   default: console.log('Невірно');
+//     break;
+// }
 
 
 
