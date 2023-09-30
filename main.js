@@ -418,10 +418,188 @@
 
 
 
+                                    // Konspekt Modul 02
+// 01
+// const clients = ["Mango", "Ajax", "Poly"];
+// for (let i = 0; i < clients.length; i += 1) {
+//   console.log(clients[i]);
+// }
+
+
+// 02
+// const clients = ["Mango", "Ajax", "Poly"];
+// for (const client of clients) {
+//   console.log(client);
+// }
+// const string = "javascript";
+// for (const character of string) {
+//   console.log(character);
+// }
+
+
+// 03
+// const clients = ["Mango", "Poly", "Ajax"];
+// const clientNameToFind = "Poly";
+// let message;
+// for (const client of clients) {
+//   if (client === clientNameToFind) {
+//     message = "Клієнт з таким ім'ям є в базі даних!";
+//     break;
+//   }
+//   message = "Клієнт з таким ім'ям відсутній в базі даних!";
+// }
+// console.log(message);
+
+
+// 04
+// const clients = ["Mango", "Poly", "Ajax"];
+// const clientNameToFind = "Poly";
+// let message = "Клієнт з таким ім'ям відсутній в базі даних!";
+// for (const client of clients) {
+//   if (client === clientNameToFind) {
+//     message = "Клієнт з таким ім'ям є в базі даних!";
+//     break;
+//   }
+//   }
+// console.log(message);
+
+
+// 05
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
+// for (let i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] < threshold) {
+//     continue;
+//   }
+//   console.log(`Число більше за ${threshold}: ${numbers[i]}`);
+// }
+
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
+// for (const number of numbers) {
+//   if (number < threshold) {
+//     continue;
+//   }
+//   console.log(`Число більше за ${threshold}: ${number}`);
+// }
+
+
+// 06
+// const name = "Mango";
+// console.log(name.split("")); // ["M", "a", "n", "g", "o"]
+// const message = "JavaScript - це цікаво";
+// console.log(message.split(" ")); // ["JavaScript", "-", "це", "цікаво"]
+
+
+// 07
+// const words = ["JavaScript", "це", "цікаво"];
+// console.log(words.join("")); // "JavaScriptцецікаво"
+// console.log(words.join(" ")); // "JavaScript це цікаво"
+// console.log(words.join("-")); // "JavaScript-це-цікаво"
+
+
+// 08
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.indexOf("Poly")); // 2
+// console.log(clients.indexOf("Monkong")); // -1
+
+
+// 09
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.includes("Poly")); // true
+// console.log(clients.includes("Monkong")); // false
+
+
+// 10
+// // Виносимо варіанти в масив
+// const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
+// const fruit = "cherry";
+// // Перевіряємо присутність елемента
+// const hasFruit = redFruits.includes(fruit);
+// if (hasFruit) {
+//   console.log(`${fruit} is a red fruit!`);
+// }
+
+
+// 11
+// const numbers = [];
+// numbers.push(1);
+// console.log(numbers); // [1]
+// numbers.push(2);
+// console.log(numbers); // [1, 2]
+// numbers.push(3);
+// console.log(numbers); // [1, 2, 3]
+// numbers.push(4);
+// console.log(numbers); // [1, 2, 3, 4]
+// numbers.push(5);
+// console.log(numbers); // [1, 2, 3, 4, 5]
+
+// 12
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.pop()); //  5
+// console.log(numbers); // [1, 2, 3, 4]
+// console.log(numbers.pop()); //  4
+// console.log(numbers); // [1, 2, 3]
+// console.log(numbers.pop()); //  3
+// console.log(numbers); // [1, 2]
+// console.log(numbers.pop()); //  2
+// console.log(numbers); // [1]
+// console.log(numbers.pop()); //  1
+// console.log(numbers); // []
+
+
+// 13
+// function multiply() {
+//   let total = 1;
+//   for (const argument of arguments) {
+//     total *= argument;
+//   }
+//   return total;
+// }
+// console.log(multiply(1, 2, 3)); //  6
+// console.log(multiply(1, 2, 3, 4)); //  24
+// console.log(multiply(1, 2, 3, 4, 5)); //  120
+
+
+// 14
+// function withdraw(amount, balance) {
+//   if (amount === 0) {
+//     console.log("Для проведення операції введіть суму більшу за нуль");
+//   } else if (amount > balance) {
+//     console.log("Недостатньо коштів на рахунку");
+//   } else {
+//     console.log("Операція зняття коштів проведена успішно");
+//   }
+// }
+// withdraw(0, 300);
+// withdraw(500, 300);
+// withdraw(100, 300);
+
+
+// 15
+// function withdraw(amount, balance) {
+//   if (amount === 0) {
+//     console.log("Для проведення операції введіть суму більшу за нуль");
+//     return;
+//   }
+//   if (amount > balance) {
+//     console.log("Недостатньо коштів на рахунку");
+//     return;
+//   }
+//   console.log("Операція зняття коштів проведена");
+// }
+// withdraw(0, 300);
+// withdraw(500, 300);
+// withdraw(100, 300);
 
 
 
 
 
 
-// console.log();
+
+
+
+
+
+
