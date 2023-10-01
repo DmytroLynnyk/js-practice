@@ -1,4 +1,5 @@
-                                    // Modul 01
+// HomeworkModul 01
+
 // 01
 // Change code below this line
 // const productName = "Droid";
@@ -8,14 +9,12 @@
 // console.log(pricePerItem);
 // 2000
 
-
 // 02
 // let productName = "Droid";
 // let pricePerItem = 2000;
 // // Change code below this line
 // productName = "Repair droid";
 // pricePerItem = pricePerItem += 1500;
-
 
 // 03
 // Change code below this line
@@ -25,20 +24,17 @@
 // const isOnline = true;
 // const isAdmin = false;
 
-
 // 04
 // const pricePerItem = 3500;
 // const orderedQuantity = 4;
 // // Change code below this line
 // const totalPrice = pricePerItem * orderedQuantity;
 
-
 // 05
 // const productName = "Droid";
 // const pricePerItem = 3500;
 // // Change code below this line
 // const message = `You picked ${productName}, price per item is ${pricePerItem} credits`
-
 
 // 06
 // // Change code below this line
@@ -48,14 +44,12 @@
 // const totalPrice = pricePerDroid * orderedQuantity + deliveryFee
 // const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`
 
-
 // 07
 // // Change code below this line
 // function sayHi() {
 //   console.log("Hello, this is my first function!")
 // }
 // sayHi()
-
 
 // 08
 // // Change code below this line
@@ -66,7 +60,6 @@
 // add(15, 27, 10);
 // add(10, 20, 30);
 // add(5, 10, 15);
-
 
 // 09
 // function add(a, b, c) {
@@ -79,7 +72,6 @@
 // console.log(add(10, 20, 30));
 // console.log(add(5, 10, 15));
 
-
 // 10
 // function makeMessage (name, price) {
 //   // Change code below this line
@@ -88,7 +80,6 @@
 //   return message;
 // };
 
-
 // 11
 // function calculateTotalPrice (orderedQuantity, pricePerItem) {
 //   // Change code below this line
@@ -96,7 +87,6 @@
 //   // Change code above this line
 //   return totalPrice;
 // };
-
 
 // 12
 // function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
@@ -107,7 +97,6 @@
 //   return message;
 // }
 
-
 // 13
 // function isAdult(age) {
 //   // Change code below this line
@@ -115,7 +104,6 @@
 //   // Change code above this line
 //   return passed;
 // }
-
 
 // 14
 // function isValidPassword(password) {
@@ -125,7 +113,6 @@
 //   // Change code above this line
 //   return isMatch;
 // }
-
 
 // 15
 // function checkAge(age) {
@@ -137,7 +124,6 @@
 //   }
 //   return message;
 // }
-
 
 // 16
 // function checkStorage(available, ordered) {
@@ -152,7 +138,6 @@
 //   return message;
 // }
 
-
 // 17
 // let a = 5;
 // let b = 10;
@@ -164,13 +149,12 @@
 // c *= 3;
 // d /= 10;
 
-
 // 18
 // function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
 //   let message;
 //   // Change code below this line
 //   totalPrice = pricePerDroid * orderedQuantity;
-  
+
 //   if (totalPrice > customerCredits) {
 //     message = "Insufficient funds!"
 //   } else {
@@ -180,7 +164,6 @@
 //   // Change code above this line
 //   return message;
 // }
-
 
 // 19
 // function checkPassword(password) {
@@ -196,7 +179,6 @@
 //   return message;
 // }
 
-
 // 20
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = 'jqueryismyjam';
@@ -210,7 +192,6 @@
 //   }
 //   return message;
 // }
-
 
 // 21
 // function checkStorage(available, ordered) {
@@ -233,7 +214,6 @@
 //   return canAccessContent;
 // }
 
-
 // 23
 // function isNumberNotInRange(start, end, number) {
 //   const isInRange = number >= start && number <= end;
@@ -241,7 +221,6 @@
 
 //   return isNotInRange;
 // }
-
 
 // 24
 // function getDiscount(totalSpent) {
@@ -264,7 +243,6 @@
 //   return discount;
 // }
 
-
 // 25
 // function checkStorage(available, ordered) {
 //   let message;
@@ -273,7 +251,6 @@
 //   // Change code above this line
 //   return message;
 // }
-
 
 // 26
 // function checkPassword(password) {
@@ -284,7 +261,6 @@
 //   // Change code above this line
 //   return message;
 // }
-
 
 // 27
 // function getSubscriptionPrice(type) {
@@ -305,25 +281,23 @@
 //   return price;
 // }
 
-
 // 28
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = "jqueryismyjam";
 //   let message;
 //   switch (password) {
 //     case null:
-//       message = "Canceled by user!";      
-//       break;  
+//       message = "Canceled by user!";
+//       break;
 //     case ADMIN_PASSWORD:
 //       message = "Welcome!";
-//       break;    
+//       break;
 //     default:
 //       message = "Access denied, wrong password!";
 //   }
 //   // Change code above this line
 //   return message;
 // }
-
 
 // 29
 // function getShippingCost(country) {
@@ -349,13 +323,11 @@
 //   return message;
 // }
 
-
 // 30
 // function getNameLength(name) {
 //   const message = `Name ${name} is ${name.length} characters long`; // Change this line
 //   return message;
 // }
-
 
 // 31
 // const courseTopic = "JavaScript essentials";
@@ -365,13 +337,11 @@
 // const lastElement = courseTopic[courseTopic.length-1];
 // // Change code above this line
 
-
 // 32
 // function getSubstring(string, length) {
 //   const substring = string.slice (string, length); // Change this line
 //   return substring;
 // }
-
 
 // 33
 // function formatMessage(message, maxLength) {
@@ -386,7 +356,6 @@
 //   return result;
 // }
 
-
 // 34
 // function normalizeInput(input) {
 //   const normalizedInput = input.toLowerCase(); // Change this line
@@ -394,13 +363,11 @@
 //   return normalizedInput;
 // }
 
-
 // 35
 // function checkForName(fullName, name) {
 //  const result = fullName.includes(name); // Change this line
 //   return result;
 // }
-
 
 // 36
 // function checkForSpam(message) {
@@ -412,19 +379,14 @@
 //   return result;
 // }
 
+// Modul 02
 
-                                    // Modul 02
-
-
-
-
-                                    // Konspekt Modul 02
+// Abstract Modul 02
 // 01
 // const clients = ["Mango", "Ajax", "Poly"];
 // for (let i = 0; i < clients.length; i += 1) {
 //   console.log(clients[i]);
 // }
-
 
 // 02
 // const clients = ["Mango", "Ajax", "Poly"];
@@ -435,7 +397,6 @@
 // for (const character of string) {
 //   console.log(character);
 // }
-
 
 // 03
 // const clients = ["Mango", "Poly", "Ajax"];
@@ -450,7 +411,6 @@
 // }
 // console.log(message);
 
-
 // 04
 // const clients = ["Mango", "Poly", "Ajax"];
 // const clientNameToFind = "Poly";
@@ -462,7 +422,6 @@
 //   }
 //   }
 // console.log(message);
-
 
 // 05
 // const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
@@ -483,13 +442,11 @@
 //   console.log(`Число більше за ${threshold}: ${number}`);
 // }
 
-
 // 06
 // const name = "Mango";
 // console.log(name.split("")); // ["M", "a", "n", "g", "o"]
 // const message = "JavaScript - це цікаво";
 // console.log(message.split(" ")); // ["JavaScript", "-", "це", "цікаво"]
-
 
 // 07
 // const words = ["JavaScript", "це", "цікаво"];
@@ -497,18 +454,15 @@
 // console.log(words.join(" ")); // "JavaScript це цікаво"
 // console.log(words.join("-")); // "JavaScript-це-цікаво"
 
-
 // 08
 // const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
 // console.log(clients.indexOf("Poly")); // 2
 // console.log(clients.indexOf("Monkong")); // -1
 
-
 // 09
 // const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
 // console.log(clients.includes("Poly")); // true
 // console.log(clients.includes("Monkong")); // false
-
 
 // 10
 // // Виносимо варіанти в масив
@@ -519,7 +473,6 @@
 // if (hasFruit) {
 //   console.log(`${fruit} is a red fruit!`);
 // }
-
 
 // 11
 // const numbers = [];
@@ -547,7 +500,6 @@
 // console.log(numbers.pop()); //  1
 // console.log(numbers); // []
 
-
 // 13
 // function multiply() {
 //   let total = 1;
@@ -559,7 +511,6 @@
 // console.log(multiply(1, 2, 3)); //  6
 // console.log(multiply(1, 2, 3, 4)); //  24
 // console.log(multiply(1, 2, 3, 4, 5)); //  120
-
 
 // 14
 // function withdraw(amount, balance) {
@@ -574,7 +525,6 @@
 // withdraw(0, 300);
 // withdraw(500, 300);
 // withdraw(100, 300);
-
 
 // 15
 // function withdraw(amount, balance) {
@@ -592,8 +542,7 @@
 // withdraw(500, 300);
 // withdraw(100, 300);
 
-
-                                    // Mentor practice
+// Mentor practice
 // 01
 // const min = parseInt(prompt('введіть число'));
 // if (min <= 15) {
@@ -607,7 +556,6 @@
 // } else {
 //   console.log('Невірно');
 // }
-
 
 // 02
 // const min = parseInt(prompt('введіть число'));
@@ -628,5 +576,187 @@
 //     break;
 // }
 
+// Homework Modul 02
 
+// 01
+// function checkAge(age) {
+//   if (age >= 18) {
+//     // Change this line
+//     return "You are an adult";
+//   }
+//   return "You are a minor";
+// }
 
+// 02
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   // Change code below this line
+//   if (password === ADMIN_PASSWORD) {
+//     return "Welcome!";
+//   }
+//   return "Access denied, wrong password!";
+//   // Change code above this line
+// }
+
+// 03
+// function checkStorage(available, ordered) {
+//   // Change code below this line
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   }
+//   if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   }
+//   return "The order is accepted, our manager will contact you";
+//   // Change code above this line
+// }
+
+// 04
+// // Change code below this line
+// const fruits =const  ["apple", "plum", "pear", "orange"];
+
+// 05
+// const fruits = ["apple", "plum", "pear", "orange"];
+// const firstElement = fruits[0];
+// const secondElement = fruits[1];
+// const lastElement = fruits[fruits.length - 1];
+// // Change code below this line
+
+// 06
+// const fruits = ["apple", "plum", "pear", "orange"];
+// fruits[1] = "peach";
+// fruits[3] = "banana";
+// // Write your code under this line
+
+// 07
+// const fruits = ["apple", "peach", "pear", "banana"];
+// const fruitsArrayLength = fruits.length;
+// // Change code below this line
+
+// 08
+// const fruits = ["apple", "peach", "pear", "banana"];
+// const lastElementIndex = fruits.length - 1;
+// const lastElement = fruits[lastElementIndex];
+// // Change code below this line
+
+// 09
+// function getExtremeElements(array) {
+//   // Change code below this line
+//   array = [array[0], array[array.length - 1]];
+//   return array;
+//   // Change code above this line
+// }
+
+// 10
+// function splitMessage(message, delimiter) {
+//   let words;
+//   // Change code below this line
+//   words = message.split(delimiter);
+//   // Change code above this line
+//   return words;
+// }
+
+// 11
+// function calculateEngravingPrice(message, pricePerWord) {
+//   // Change code below this line
+//   words = message.split(" ");
+//   totalPrice = words.length * pricePerWord;
+//   return totalPrice;
+//   // Change code above this line
+// }
+
+// 12
+// function makeStringFromArray(array, delimiter) {
+//   let string;
+//   // Change code below this line
+//   string = array.join(delimiter);
+//   // Change code above this line
+//   return string;
+// }
+
+// 13
+// function slugify(title) {
+//   slug = title.toLowerCase().split(" ").join("-");
+//   return slug;
+// }
+
+// 14
+// const fruits = ["apple", "plum", "pear", "orange", "banana"];
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, fruits.length - 1);
+// const lastThreeEls = fruits.slice(-3);
+
+// 15
+// const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const newClients = ["Peach", "Houston"];
+// const allClients = oldClients.concat(newClients); // Change this line
+
+// 16
+// function makeArray(firstArray, secondArray, maxLength) {
+//   // Change code below this line
+//   const makeArray = firstArray.concat(secondArray);
+//   if (makeArray.length > maxLength) {
+//     return makeArray.slice(0, maxLength);
+//   }
+//   return makeArray;
+//   // Change code above this line
+// }
+
+// 17
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1) {
+//   // Change this line
+//   console.log(i);
+// }
+
+// 18
+// function calculateTotal(number) {
+//   // Change code below this line
+//   let sum = 0;
+//   for (let i = 0; i <= number; i += 1) {
+//     sum += i;
+//   }
+//   return sum;
+//   // Change code above this line
+// }
+
+// 19
+// const fruits = ["apple", "plum", "pear", "orange"];
+// for (let i = 0; i < fruits.length; i += 1) {
+//   // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+// 20
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (i = 0; i <= order.length - 1; i += 1) {
+//     total += order[i];
+//   }
+//   // Change code above this line
+//   return total;
+// }
+
+// 21
+// function findLongestWord(string) {
+//   // Change code below this line
+//   const words = string.split(" ");
+//   console.log();
+//   let longestWord = "";
+//   for (const word of words) {
+//     if (word.length > longestWord.length) {
+//       longestWord = word;
+//     }
+//   }
+//   return longestWord;
+//   // Change code above this line
+// }
+
+// 22
+
+console.log();
