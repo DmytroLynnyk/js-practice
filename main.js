@@ -758,5 +758,125 @@
 // }
 
 // 22
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i <= max; i++) {
+//     numbers.push(i);
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+
+// 23
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const newArray = [];
+//   for (const number of numbers) {
+//     if (number > value) {
+//       newArray.push(number);
+//     }
+//   }
+//   return newArray;
+//   // Change code above this line
+// }
+
+// 24
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+//   return fruits.includes(fruit); // Change this line
+// }
+
+// 25
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   const newArray = [];
+//   for (const number of array1) {
+//     if (array2.includes(number)) {
+//       newArray.push(number);
+//     }
+//   }
+//   return newArray;
+//   // Change code above this line
+// }
+
+// 26
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (const item of order) {
+//     total += item;
+//   }
+//   // Change code above this line
+//   return total;
+// }
+
+// 27
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+//   for (const number of numbers) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
+// 28
+// // Change code below this line
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 8;
+// const d = 12 % 7;
+// const e = 8 % 6;
+
+// 29
+// function getEvenNumbers(start, end) {
+//   // Change code below this line
+//   let arr = [];
+//   for (i = start; i <= end; i++) {
+//     if (i % 2 === 0) {
+//       arr.push(i);
+//     }
+//   }
+//   return arr;
+//   // Change code above this line
+// }
+
+// 30
+// const start = 6;
+// const end = 27;
+// let number;
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+// 31
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+//   // Change code above this line
+// }
+
+// 32
+// function includes(array, value) {
+//   // Change code below this line
+//   for (const item of array) {
+//     if (item === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+//   // Change code above this line
+// }
 
 console.log();
