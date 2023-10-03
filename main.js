@@ -1,4 +1,4 @@
-// HomeworkModul 01
+// HomeworkModule 01
 
 // 01
 // Change code below this line
@@ -379,9 +379,9 @@
 //   return result;
 // }
 
-// Modul 02
+// Module 02
 
-// Abstract Modul 02
+// Abstract Module 02
 // 01
 // const clients = ["Mango", "Ajax", "Poly"];
 // for (let i = 0; i < clients.length; i += 1) {
@@ -576,7 +576,7 @@
 //     break;
 // }
 
-// Homework Modul 02
+// Homework Module 02
 
 // 01
 // function checkAge(age) {
@@ -878,5 +878,3 @@
 //   return false;
 //   // Change code above this line
 // }
-
-console.log();
