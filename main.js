@@ -1,6 +1,8 @@
-// HomeworkModule 01
+// ✅ ✅ ✅ Module 01 ❌
 
-// 01
+// ✅ ✅ Homework 01
+
+// ✅ Task 01
 // Change code below this line
 // const productName = "Droid";
 // const pricePerItem = 2000;
@@ -9,14 +11,14 @@
 // console.log(pricePerItem);
 // 2000
 
-// 02
+// ✅ Task 02
 // let productName = "Droid";
 // let pricePerItem = 2000;
 // // Change code below this line
 // productName = "Repair droid";
 // pricePerItem = pricePerItem += 1500;
 
-// 03
+// ✅ Task 03
 // Change code below this line
 // const topSpeed = 160;
 // const distance = 617.54;
@@ -24,19 +26,19 @@
 // const isOnline = true;
 // const isAdmin = false;
 
-// 04
+// ✅ Task 04
 // const pricePerItem = 3500;
 // const orderedQuantity = 4;
 // // Change code below this line
 // const totalPrice = pricePerItem * orderedQuantity;
 
-// 05
+// ✅ Task 05
 // const productName = "Droid";
 // const pricePerItem = 3500;
 // // Change code below this line
 // const message = `You picked ${productName}, price per item is ${pricePerItem} credits`
 
-// 06
+// ✅ Task 06
 // // Change code below this line
 // const pricePerDroid = 800;
 // let orderedQuantity = 6;
@@ -44,14 +46,14 @@
 // const totalPrice = pricePerDroid * orderedQuantity + deliveryFee
 // const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`
 
-// 07
+// ✅ Task 07
 // // Change code below this line
 // function sayHi() {
 //   console.log("Hello, this is my first function!")
 // }
 // sayHi()
 
-// 08
+// ✅ Task 08
 // // Change code below this line
 // function add(a, b, c) {
 //   console.log(`Addition result equals ${a + b + c}`);
@@ -61,7 +63,7 @@
 // add(10, 20, 30);
 // add(5, 10, 15);
 
-// 09
+// ✅ Task 09
 // function add(a, b, c) {
 //   // Change code below this line
 // return a + b + c;
@@ -72,7 +74,7 @@
 // console.log(add(10, 20, 30));
 // console.log(add(5, 10, 15));
 
-// 10
+// ✅ Task 10
 // function makeMessage (name, price) {
 //   // Change code below this line
 //    const message = `You picked ${name}, price per item is ${price} credits`;
@@ -80,7 +82,7 @@
 //   return message;
 // };
 
-// 11
+// ✅ Task 11
 // function calculateTotalPrice (orderedQuantity, pricePerItem) {
 //   // Change code below this line
 //   const totalPrice = orderedQuantity * pricePerItem;
@@ -88,7 +90,7 @@
 //   return totalPrice;
 // };
 
-// 12
+// ✅ Task 12
 // function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
 //   // Change code below this line
 //   const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
@@ -97,7 +99,7 @@
 //   return message;
 // }
 
-// 13
+// ✅ Task 13
 // function isAdult(age) {
 //   // Change code below this line
 //   const passed = age >= 18;
@@ -105,7 +107,7 @@
 //   return passed;
 // }
 
-// 14
+// ✅ Task 14
 // function isValidPassword(password) {
 //   const SAVED_PASSWORD = 'jqueryismyjam';
 //   // Change code below this line
@@ -114,7 +116,7 @@
 //   return isMatch;
 // }
 
-// 15
+// ✅ Task 15
 // function checkAge(age) {
 //   let message;
 //   if (age >= 18) { // Change this line
@@ -125,7 +127,7 @@
 //   return message;
 // }
 
-// 16
+// ✅ Task 16
 // function checkStorage(available, ordered) {
 //   let message;
 //   // Change code below this line
@@ -138,7 +140,7 @@
 //   return message;
 // }
 
-// 17
+// ✅ Task 17
 // let a = 5;
 // let b = 10;
 // let c = 15;
@@ -149,12 +151,11 @@
 // c *= 3;
 // d /= 10;
 
-// 18
+// ✅ Task 18
 // function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
 //   let message;
 //   // Change code below this line
 //   totalPrice = pricePerDroid * orderedQuantity;
-
 //   if (totalPrice > customerCredits) {
 //     message = "Insufficient funds!"
 //   } else {
@@ -165,7 +166,7 @@
 //   return message;
 // }
 
-// 19
+// ✅ Task 19
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = 'jqueryismyjam';
 //   let message;
@@ -179,7 +180,7 @@
 //   return message;
 // }
 
-// 20
+// ✅ Task 20
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = 'jqueryismyjam';
 //   let message;
@@ -193,7 +194,7 @@
 //   return message;
 // }
 
-// 21
+// ✅ Task 21
 // function checkStorage(available, ordered) {
 //   let message;
 //   // Change code below this line
@@ -208,13 +209,13 @@
 //   return message;
 // }
 
-// 22
+// ✅ Task 22
 // function checkIfCanAccessContent(subType) {
 //   const canAccessContent = subType === "pro" || subType === "vip" // Change this line
 //   return canAccessContent;
 // }
 
-// 23
+// ✅ Task 23
 // function isNumberNotInRange(start, end, number) {
 //   const isInRange = number >= start && number <= end;
 //   const isNotInRange = !isInRange; // Change this line
@@ -222,7 +223,7 @@
 //   return isNotInRange;
 // }
 
-// 24
+// ✅ Task 24
 // function getDiscount(totalSpent) {
 //   const BASE_DISCOUNT = 0;
 //   const BRONZE_DISCOUNT = 0.02;
@@ -243,7 +244,7 @@
 //   return discount;
 // }
 
-// 25
+// ✅ Task 25
 // function checkStorage(available, ordered) {
 //   let message;
 //   // Change code below this line
@@ -252,7 +253,7 @@
 //   return message;
 // }
 
-// 26
+// ✅ Task 26
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = "jqueryismyjam";
 //   let message;
@@ -262,7 +263,7 @@
 //   return message;
 // }
 
-// 27
+// ✅ Task 27
 // function getSubscriptionPrice(type) {
 //   let price;
 //   // Change code below this line
@@ -281,7 +282,7 @@
 //   return price;
 // }
 
-// 28
+// ✅ Task 28
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = "jqueryismyjam";
 //   let message;
@@ -299,7 +300,7 @@
 //   return message;
 // }
 
-// 29
+// ✅ Task 29
 // function getShippingCost(country) {
 //   let message;
 //   // Change code below this line
@@ -323,13 +324,13 @@
 //   return message;
 // }
 
-// 30
+// ✅ Task 30
 // function getNameLength(name) {
 //   const message = `Name ${name} is ${name.length} characters long`; // Change this line
 //   return message;
 // }
 
-// 31
+// ✅ Task 31
 // const courseTopic = "JavaScript essentials";
 // // Change code below this line
 // const courseTopicLength = courseTopic.length;
@@ -337,13 +338,13 @@
 // const lastElement = courseTopic[courseTopic.length-1];
 // // Change code above this line
 
-// 32
+// ✅ Task 32
 // function getSubstring(string, length) {
 //   const substring = string.slice (string, length); // Change this line
 //   return substring;
 // }
 
-// 33
+// ✅ Task 33
 // function formatMessage(message, maxLength) {
 //   let result;
 //   // Change code below this line
@@ -356,20 +357,19 @@
 //   return result;
 // }
 
-// 34
+// ✅ Task 34
 // function normalizeInput(input) {
 //   const normalizedInput = input.toLowerCase(); // Change this line
-
 //   return normalizedInput;
 // }
 
-// 35
+// ✅ Task 35
 // function checkForName(fullName, name) {
 //  const result = fullName.includes(name); // Change this line
 //   return result;
 // }
 
-// 36
+// ✅ Task 36
 // function checkForSpam(message) {
 //   let result;
 //   // Change code below this line
@@ -379,16 +379,17 @@
 //   return result;
 // }
 
-// Module 02
+// ✅ ✅ ✅ Module 02
 
-// Abstract Module 02
-// 01
+// ✅ ✅ Abstract 02
+
+// ✅ Task 01
 // const clients = ["Mango", "Ajax", "Poly"];
 // for (let i = 0; i < clients.length; i += 1) {
 //   console.log(clients[i]);
 // }
 
-// 02
+// ✅ Task 02
 // const clients = ["Mango", "Ajax", "Poly"];
 // for (const client of clients) {
 //   console.log(client);
@@ -398,7 +399,7 @@
 //   console.log(character);
 // }
 
-// 03
+// ✅ Task 03
 // const clients = ["Mango", "Poly", "Ajax"];
 // const clientNameToFind = "Poly";
 // let message;
@@ -411,7 +412,7 @@
 // }
 // console.log(message);
 
-// 04
+// ✅ Task 04
 // const clients = ["Mango", "Poly", "Ajax"];
 // const clientNameToFind = "Poly";
 // let message = "Клієнт з таким ім'ям відсутній в базі даних!";
@@ -423,7 +424,7 @@
 //   }
 // console.log(message);
 
-// 05
+// ✅ Task 05
 // const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
 // const threshold = 15;
 // for (let i = 0; i < numbers.length; i += 1) {
@@ -432,7 +433,6 @@
 //   }
 //   console.log(`Число більше за ${threshold}: ${numbers[i]}`);
 // }
-
 // const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
 // const threshold = 15;
 // for (const number of numbers) {
@@ -442,29 +442,29 @@
 //   console.log(`Число більше за ${threshold}: ${number}`);
 // }
 
-// 06
+// ✅ Task 06
 // const name = "Mango";
 // console.log(name.split("")); // ["M", "a", "n", "g", "o"]
 // const message = "JavaScript - це цікаво";
 // console.log(message.split(" ")); // ["JavaScript", "-", "це", "цікаво"]
 
-// 07
+// ✅ Task 07
 // const words = ["JavaScript", "це", "цікаво"];
 // console.log(words.join("")); // "JavaScriptцецікаво"
 // console.log(words.join(" ")); // "JavaScript це цікаво"
 // console.log(words.join("-")); // "JavaScript-це-цікаво"
 
-// 08
+// ✅ Task 08
 // const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
 // console.log(clients.indexOf("Poly")); // 2
 // console.log(clients.indexOf("Monkong")); // -1
 
-// 09
+// ✅ Task 09
 // const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
 // console.log(clients.includes("Poly")); // true
 // console.log(clients.includes("Monkong")); // false
 
-// 10
+// ✅ Task 10
 // // Виносимо варіанти в масив
 // const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
 // const fruit = "cherry";
@@ -474,7 +474,7 @@
 //   console.log(`${fruit} is a red fruit!`);
 // }
 
-// 11
+// ✅ Task 11
 // const numbers = [];
 // numbers.push(1);
 // console.log(numbers); // [1]
@@ -487,7 +487,7 @@
 // numbers.push(5);
 // console.log(numbers); // [1, 2, 3, 4, 5]
 
-// 12
+// ✅ Task 12
 // const numbers = [1, 2, 3, 4, 5];
 // console.log(numbers.pop()); //  5
 // console.log(numbers); // [1, 2, 3, 4]
@@ -500,7 +500,7 @@
 // console.log(numbers.pop()); //  1
 // console.log(numbers); // []
 
-// 13
+// ✅ Task 13
 // function multiply() {
 //   let total = 1;
 //   for (const argument of arguments) {
@@ -512,7 +512,7 @@
 // console.log(multiply(1, 2, 3, 4)); //  24
 // console.log(multiply(1, 2, 3, 4, 5)); //  120
 
-// 14
+// ✅ Task 14
 // function withdraw(amount, balance) {
 //   if (amount === 0) {
 //     console.log("Для проведення операції введіть суму більшу за нуль");
@@ -526,7 +526,7 @@
 // withdraw(500, 300);
 // withdraw(100, 300);
 
-// 15
+// ✅ Task 15
 // function withdraw(amount, balance) {
 //   if (amount === 0) {
 //     console.log("Для проведення операції введіть суму більшу за нуль");
@@ -542,8 +542,8 @@
 // withdraw(500, 300);
 // withdraw(100, 300);
 
-// Mentor practice
-// 01
+// ✅ ✅ Mentor practice 02
+// ✅ Task 01
 // const min = parseInt(prompt('введіть число'));
 // if (min <= 15) {
 //   console.log('Перша чверть');
@@ -557,7 +557,7 @@
 //   console.log('Невірно');
 // }
 
-// 02
+// ✅ Task 02
 // const min = parseInt(prompt('введіть число'));
 // switch (true) {
 //   case (min <= 15):
@@ -576,9 +576,9 @@
 //     break;
 // }
 
-// Homework Module 02
+// ✅ ✅ Homework Module 02
 
-// 01
+// ✅ Task 01
 // function checkAge(age) {
 //   if (age >= 18) {
 //     // Change this line
@@ -587,7 +587,7 @@
 //   return "You are a minor";
 // }
 
-// 02
+// ✅ Task 02
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = "jqueryismyjam";
 //   // Change code below this line
@@ -598,7 +598,7 @@
 //   // Change code above this line
 // }
 
-// 03
+// ✅ Task 03
 // function checkStorage(available, ordered) {
 //   // Change code below this line
 //   if (ordered === 0) {
@@ -611,35 +611,35 @@
 //   // Change code above this line
 // }
 
-// 04
+// ✅ Task 04
 // // Change code below this line
 // const fruits =const  ["apple", "plum", "pear", "orange"];
 
-// 05
+// 0✅ 5
 // const fruits = ["apple", "plum", "pear", "orange"];
 // const firstElement = fruits[0];
 // const secondElement = fruits[1];
 // const lastElement = fruits[fruits.length - 1];
 // // Change code below this line
 
-// 06
+// ✅ Task 06
 // const fruits = ["apple", "plum", "pear", "orange"];
 // fruits[1] = "peach";
 // fruits[3] = "banana";
 // // Write your code under this line
 
-// 07
+// ✅ Task 07
 // const fruits = ["apple", "peach", "pear", "banana"];
 // const fruitsArrayLength = fruits.length;
 // // Change code below this line
 
-// 08
+// ✅ Task 08
 // const fruits = ["apple", "peach", "pear", "banana"];
 // const lastElementIndex = fruits.length - 1;
 // const lastElement = fruits[lastElementIndex];
 // // Change code below this line
 
-// 09
+// ✅ Task 09
 // function getExtremeElements(array) {
 //   // Change code below this line
 //   array = [array[0], array[array.length - 1]];
@@ -647,7 +647,7 @@
 //   // Change code above this line
 // }
 
-// 10
+// ✅ Task 10
 // function splitMessage(message, delimiter) {
 //   let words;
 //   // Change code below this line
@@ -656,7 +656,7 @@
 //   return words;
 // }
 
-// 11
+// ✅ Task 11
 // function calculateEngravingPrice(message, pricePerWord) {
 //   // Change code below this line
 //   words = message.split(" ");
@@ -665,7 +665,7 @@
 //   // Change code above this line
 // }
 
-// 12
+// ✅ Task 12
 // function makeStringFromArray(array, delimiter) {
 //   let string;
 //   // Change code below this line
@@ -674,25 +674,25 @@
 //   return string;
 // }
 
-// 13
+// ✅ Task 13
 // function slugify(title) {
 //   slug = title.toLowerCase().split(" ").join("-");
 //   return slug;
 // }
 
-// 14
+// ✅ Task 14
 // const fruits = ["apple", "plum", "pear", "orange", "banana"];
 // // Change code below this line
 // const firstTwoEls = fruits.slice(0, 2);
 // const nonExtremeEls = fruits.slice(1, fruits.length - 1);
 // const lastThreeEls = fruits.slice(-3);
 
-// 15
+// ✅ Task 15
 // const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
 // const newClients = ["Peach", "Houston"];
 // const allClients = oldClients.concat(newClients); // Change this line
 
-// 16
+// ✅ Task 16
 // function makeArray(firstArray, secondArray, maxLength) {
 //   // Change code below this line
 //   const makeArray = firstArray.concat(secondArray);
@@ -703,7 +703,7 @@
 //   // Change code above this line
 // }
 
-// 17
+// ✅ Task 17
 // const start = 3;
 // const end = 7;
 
@@ -712,7 +712,7 @@
 //   console.log(i);
 // }
 
-// 18
+// ✅ Task 18
 // function calculateTotal(number) {
 //   // Change code below this line
 //   let sum = 0;
@@ -723,7 +723,7 @@
 //   // Change code above this line
 // }
 
-// 19
+// ✅ Task 19
 // const fruits = ["apple", "plum", "pear", "orange"];
 // for (let i = 0; i < fruits.length; i += 1) {
 //   // Change this line
@@ -731,7 +731,7 @@
 //   console.log(fruit);
 // }
 
-// 20
+// ✅ Task 20
 // function calculateTotalPrice(order) {
 //   let total = 0;
 //   // Change code below this line
@@ -742,7 +742,7 @@
 //   return total;
 // }
 
-// 21
+// ✅ Task 21
 // function findLongestWord(string) {
 //   // Change code below this line
 //   const words = string.split(" ");
@@ -757,7 +757,7 @@
 //   // Change code above this line
 // }
 
-// 22
+// ✅ Task 22
 // function createArrayOfNumbers(min, max) {
 //   const numbers = [];
 //   // Change code below this line
@@ -768,7 +768,7 @@
 //   return numbers;
 // }
 
-// 23
+// ✅ Task 23
 // function filterArray(numbers, value) {
 //   // Change code below this line
 //   const newArray = [];
@@ -781,13 +781,13 @@
 //   // Change code above this line
 // }
 
-// 24
+// ✅ Task 24
 // function checkFruit(fruit) {
 //   const fruits = ["apple", "plum", "pear", "orange"];
 //   return fruits.includes(fruit); // Change this line
 // }
 
-// 25
+// ✅ Task 25
 // function getCommonElements(array1, array2) {
 //   // Change code below this line
 //   const newArray = [];
@@ -800,7 +800,7 @@
 //   // Change code above this line
 // }
 
-// 26
+// ✅ Task 26
 // function calculateTotalPrice(order) {
 //   let total = 0;
 //   // Change code below this line
@@ -811,7 +811,7 @@
 //   return total;
 // }
 
-// 27
+// ✅ Task 27
 // function filterArray(numbers, value) {
 //   // Change code below this line
 //   const filteredNumbers = [];
@@ -824,7 +824,7 @@
 //   // Change code above this line
 // }
 
-// 28
+// ✅ Task 28
 // // Change code below this line
 // const a = 3 % 3;
 // const b = 4 % 3;
@@ -832,7 +832,7 @@
 // const d = 12 % 7;
 // const e = 8 % 6;
 
-// 29
+// ✅ Task 29
 // function getEvenNumbers(start, end) {
 //   // Change code below this line
 //   let arr = [];
@@ -845,7 +845,7 @@
 //   // Change code above this line
 // }
 
-// 30
+// ✅ Task 30
 // const start = 6;
 // const end = 27;
 // let number;
@@ -856,7 +856,7 @@
 //   }
 // }
 
-// 31
+// ✅ Task 31
 // function findNumber(start, end, divisor) {
 //   // Change code below this line
 //   for (let i = start; i < end; i += 1) {
@@ -867,7 +867,7 @@
 //   // Change code above this line
 // }
 
-// 32
+// ✅ Task 32
 // function includes(array, value) {
 //   // Change code below this line
 //   for (const item of array) {
@@ -878,3 +878,296 @@
 //   return false;
 //   // Change code above this line
 // }
+
+// ✅ ✅ ✅ Module 03
+
+// ✅ ✅ Abstract 03
+
+// ✅ Task 01
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+
+// const bookTitle = book.title;
+// console.log(bookTitle); // 'The Last Kingdom'
+
+// const bookGenres = book.genres;
+// console.log(bookGenres); // ['historical prose', 'adventurs']
+
+// const bookPrice = book.price;
+// console.log(bookPrice); // undefined
+
+// ✅ Task 02
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   location: {
+//     country: "Jamaica",
+//     city: "Ocho Rios",
+//   },
+//   hobbies: ["swiming", "music", "sci-fi"],
+// };
+
+// const location = user.location;
+// console.log(location); // Об'єкт location
+
+// ✅ Task 03
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+// const bookTitle = book["title"];
+// console.log(bookTitle); // 'The Last Kingdom'
+// const bookGenres = book["genres"];
+// console.log(bookGenres); // ['historical prose', 'adventurs']
+// const propKey = "author";
+// const bookAuthor = book[propKey];
+// console.log(bookAuthor); // 'Bernard Cornwell'
+
+// ✅ Task 04
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+// book.rating = 9;
+// book.isPublic = false;
+// book.genres.push("драма");
+// console.log(book.rating); // 9
+// console.log(book.isPublic); // false
+// console.log(book.genres); // ['historical prose', 'adventures', 'драма']
+
+// ✅ Task 05
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+// book.pageCount = 836;
+// book.originalLanguage = "en";
+// book.translations = ["ua", "ru"];
+// console.log(book.pageCount); // 836
+// console.log(book.originalLanguage); // 'en'
+// console.log(book.translations); // ['ua', 'ru']
+
+// ✅ Task 06
+// const name = "Генрі Сибола";
+// const age = 25;
+// const user = {
+//   name,
+//   age,
+// };
+// console.log(user.name); // "Генрі Сибола"
+// console.log(user.age); // 25
+
+// ✅ Task 07
+// const propName = "name";
+// const user = {
+//   age: 25,
+//   // Ім'я цієї властивості буде взяте зі значення змінної propName
+//   [propName]: "Генрі Сибола",
+// };
+// console.log(user.name); // 'Генрі Сибола'
+
+// ✅ Task 08
+// const bookShelf = {
+//   books: ["The Last Kingdom", "Dream Guardian"],
+//   // Це метод об'єкта
+//   getBooks() {
+//     console.log("Цей метод буде повертати всі книги - властивість books");
+//   },
+//   // Це метод об'єкта
+//   addBook(bookName) {
+//     console.log("Цей метод буде додавати нову книгу у властивість books");
+//   },
+// };
+// // Виклики методів
+// bookShelf.getBooks();
+// bookShelf.addBook("Нова книга");
+
+// ✅ Task 09
+// const bookShelf = {
+//   books: ["The Last Kingdom"],
+//   getBooks() {
+//     return this.books;
+//   },
+//   addBook(bookName) {
+//     this.books.push(bookName);
+//   },
+//   removeBook(bookName) {
+//     const bookIndex = this.books.indexOf(bookName);
+//     this.books.splice(bookIndex, 1);
+//   },
+// };
+// console.log(bookShelf.getBooks()); // ["The Last Kingdom"]
+// bookShelf.addBook("The Mist");
+// bookShelf.addBook("Dream Guardian");
+// console.log(bookShelf.getBooks()); // ['The Last Kingdom', 'The Mist', 'Dream Guardian']
+// bookShelf.removeBook("The Mist");
+// console.log(bookShelf.getBooks()); // ['The Last Kingdom', 'Dream Guardian']
+
+// ✅ Task 10
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+// for (const key in book) {
+//   // Ключ
+//   console.log(key);
+//   // Значення властивості з таким ключем
+//   console.log(book[key]);
+// }
+
+// ✅ Task 11
+// const animal = {
+//   legs: 4,
+// };
+// const dog = Object.create(animal);
+// dog.name = "Манго";
+// console.log(dog); // {name: 'Манго'}
+// console.log(dog.name); // 'Манго'
+// console.log(dog.legs); // 4
+// // Повертає true для всіх властивостей
+// console.log("name" in dog); // true
+// console.log("legs" in dog); // true
+// // Повертає true тільки для власних властивостей
+// console.log(dog.hasOwnProperty("name")); // true
+// console.log(dog.hasOwnProperty("legs")); // false
+
+// ✅ Task 12
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+// for (const key in book) {
+//   // Якщо це власна властивість - виконуємо тіло if
+//   if (book.hasOwnProperty(key)) {
+//     console.log(key);
+//     console.log(book[key]);
+//   }
+//   // Якщо це невласна властивість - нічого не робимо
+// }
+
+// ✅ Task 13
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+// console.log(keys); // ['title', 'author', 'genres', 'rating']
+
+// ✅ Task 14
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+// for (const key of keys) {
+//   // Ключ
+//   console.log(key);
+//   // Значення властивості
+//   console.log(book[key]);
+// }
+
+// ✅ Task 15
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+// console.log(keys); // ['title', 'author', 'rating']
+// const values = Object.values(book);
+// console.log(values); // ['The Last Kingdom', 'Bernard Cornwell', 8.38]
+
+// ✅ Task 16
+// const goods = {
+//   apples: 6,
+//   grapes: 3,
+//   bread: 4,
+//   cheese: 7,
+// };
+// const values = Object.values(goods); // [6, 3, 4, 7]
+// let total = 0;
+// for (const value of values) {
+//   total += value;
+// }
+// console.log(total); // 20
+
+// ✅ Task 17
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+// console.log(keys); // ['title', 'author', 'rating']
+// const values = Object.values(book);
+// console.log(values); // ['The Last Kingdom', 'Bernard Cornwell', 8.38]
+// const entries = Object.entries(book);
+// console.log(entries);
+// // [["title", "The Last Kingdom"], ["author", "Bernard Cornwell"], ["rating", 8.38]]
+
+// ✅ Task 18
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На березі спокійних вод",
+//     author: "Роберт Шеклі",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//   },
+// ];
+
+// for (const book of books) {
+//   // Об'єкт книги
+//   console.log(book);
+//   // Назва
+//   console.log(book.title);
+//   // Автор
+//   console.log(book.author);
+//   // Рейтинг
+//   console.log(book.rating);
+// }
+
+// const bookNames = [];
+// for (const book of books) {
+//   bookNames.push(book.title);
+// }
+// console.log(bookNames);
+
+// let totalRating = 0;
+// for (const book of books) {
+//   totalRating += book.rating;
+// }
+// const averageRating = (totalRating / books.length).toFixed(1);
+// console.log(averageRating); // 8.2
+
+// ✅ Task 19
