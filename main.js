@@ -1171,3 +1171,410 @@
 // console.log(averageRating); // 8.2
 
 // ✅ Task 19
+// const temps = [14, -4, 25, 8, 11];
+// // В консолі буде масив
+// console.log(temps);
+// // Так не спрацює, тому що передаємо цілий масив
+// console.log(Math.max(temps)); // NaN
+// // В консолі буде набір окремих чисел
+// console.log(...temps);
+// // Розподілимо колекцію елементів у якості окремих аргументів
+// console.log(Math.max(...temps)); // 25
+
+// ✅ Task 20
+// const temps = [14, -4, 25, 8, 11];
+// // Це точна, але незалежна копія масиву temps
+// const copyOfTemps = [...temps];
+// console.log(copyOfTemps); // [14, -4, 25, 8, 11]
+
+// ✅ Task 20
+// const lastWeekTemps = [14, 25, 11];
+// const currentWeekTemps = [23, 17, 18];
+// const allTemps = [...lastWeekTemps, ...currentWeekTemps];
+// console.log(allTemps); // [14, 25, 11, 23, 17, 18]
+
+// ✅ Task 21
+// const first = { propA: 5, propB: 10 };
+// const second = { propC: 15 };
+// const third = { ...first, ...second };
+// console.log(third); // { propA: 5, propB: 10, propC: 15 }
+
+// ✅ Task 22
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15, propD: 20 };
+// const third = { ...first, ...second };
+// console.log(third); // { propA: 5, propB: 10, propC: 15, propD: 20 }
+// const fourth = { ...second, ...first };
+// console.log(fourth); // { propA: 5, propB: 10, propC: 50, propD: 20 }
+
+// ✅ Task 23
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15 };
+// const third = { propB: 20, ...first, ...second };
+// console.log(third); // { propA: 5, propB: 10, propC: 15 }
+// const fourth = { ...first, ...second, propB: 20 };
+// console.log(fourth); // { propA: 5, propB: 20, propC: 15 }
+// const fifth = { ...first, propB: 20, ...second };
+// console.log(fifth); // { propA: 5, propB: 20, propC: 15 }
+
+// ✅ Task 24
+// function multiply(...args) {
+//   console.log(args); // масив усіх аргументів
+// }
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+
+// ✅ Task 24
+// function multiply(firstNumber, secondNumber, ...otherArgs) {
+//   console.log(firstNumber); // Значення першого аргументу
+//   console.log(secondNumber); // Значення другого аргументу
+//   console.log(otherArgs); // Масив інших аргументів
+// }
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+
+// ✅ Task 25
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+// // Деструктуризуємо
+// const { title, author, isPublic, rating, coverImage } = book;
+// console.log(coverImage); // undefined
+// const accessType = isPublic ? "публічному" : "закритому";
+// const message = `Книга ${title} автора ${author} з рейтингом ${rating} знаходиться в ${accessType} доступі.`;
+
+// ✅ Task 26
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+// };
+// // Додамо зображення обкладинки, якщо воно відсутнє в об'єкті книги
+// const {
+//   title,
+//   coverImage = "https://via.placeholder.com/640/480",
+//   author,
+// } = book;
+// console.log(title); // The Last Kingdom
+// console.log(author); // Bernard Cornwell
+// console.log(coverImage); // https://via.placeholder.com/640/480
+
+// ✅ Task 27
+// const firstBook = {
+//   title: "The Last Kingdom",
+//   coverImage:
+//     "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+// };
+// const {
+//   title: firstTitle,
+//   coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
+// } = firstBook;
+// console.log(firstTitle); // The Last Kingdom
+// console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
+
+// const secondBook = {
+//   title: "Сон смішної людини",
+// };
+// const {
+//   title: secondTitle,
+//   coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
+// } = secondBook;
+// console.log(secondTitle); // Сон смішної людини
+// console.log(secondCoverImage); // https://via.placeholder.com/640/480
+
+// ✅ Task 28
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На березі спокійних вод",
+//     author: "Роберт Шеклі",
+//     rating: 8.51,
+//   },
+// ];
+// for (const book of books) {
+//   console.log(book.title);
+//   console.log(book.author);
+//   console.log(book.rating);
+// }
+// for (const book of books) {
+//   const { title, author, rating } = book;
+//   console.log(title);
+//   console.log(author);
+//   console.log(rating);
+// }
+// for (const { title, author, rating } of books) {
+//   console.log(title);
+//   console.log(author);
+//   console.log(rating);
+// }
+
+// ✅ Task 29
+// const rgb = [200, 255, 100];
+// const [red, green, blue] = rgb;
+// console.log(`R:${red},G:${green},B:${blue}`); // "R:200,G:255,B:100"
+
+// ✅ Task 30
+// const rgb = [200, 255, 100];
+// const [red, ...colors] = rgb;
+// console.log(red); // "200"
+// console.log(colors); // [255, 100]
+
+// ✅ Task 31
+// const rgb = [200, 100, 255];
+// const [, , blue] = rgb;
+// console.log(`Blue: ${blue}`); // "Blue: 255"
+
+// ✅ ✅ Mentor practice 03
+
+// ✅ Task 01
+// const products = [{ name: "apple" }, { name: "orange" }, { name: "tomato" }];
+// for (const product of products) {
+//   console.log(product);
+// }
+
+// ✅ Task 02
+// const products = {
+//   name: "tomato",
+//   qty: 20,
+//   price: 10,
+// };
+// const keysArr = Object.keys(products);
+// console.log(keysArr);
+// for (const key of keysArr) {
+//   console.log(products[key]);
+// }
+
+// ✅ Task 03
+// const arr = [1, 2, 3, 4, 5];
+// // const first = arr[0];
+// // const second = arr[1];
+// // console.log(second);
+// const [first, second, third] = arr;
+// console.log(second);
+
+// ✅ Task 04
+// const user = {
+//   name: "Test name",
+//   skills: {
+//     html: true,
+//     css: false,
+//     js: true,
+//   },
+//   age: 25,
+// };
+// const { name, skills, age } = user;
+// console.log("name", name);
+// console.log("skills", skills);
+// console.log("age", age);
+
+// ✅ Task 05
+// const user = {
+//   name: "Test name",
+//   skills: {
+//     html: true,
+//     css: false,
+//     js: true,
+//   },
+//   any: [1, "abc", false],
+// };
+// const {
+//   skills: { html, css, js },
+// } = user;
+// const {
+//   any: [first, second, third],
+// } = user;
+// console.log(first);
+// console.log(second);
+// console.log(third);
+// console.log(html);
+// console.log(css);
+// console.log(js);
+
+// ✅ Task 06
+// const user = {
+//   name: "Test name",
+//   skills: {
+//     html: true,
+//     css: false,
+//     js: true,
+//   },
+// };
+// function getUserName({ name, skills: { html, css, js } }) {
+//   console.log(
+//     `Hello my name is ${name}, I know html - ${html}, css - ${css} and js - ${js}.`
+//   );
+// }
+// getUserName(user);
+
+// ✅ Task 07
+// const users = [{ name: "Kate" }, { name: "Alex" }, { name: "Mango" }];
+// const names = [];
+// // // for (const user of users) {
+// // //   names.push(user.name);
+// // // }
+// // for (const { name } of users) {
+// //   names.push(name);
+// // }
+// for (const user of users) {
+//   const { name } = user;
+//   names.push(name);
+// }
+// console.log(names);
+
+// ✅ Task 08
+// const obj = {
+//   a: 1,
+//   b: `abc`,
+// };
+// const obj1 = { ...obj };
+// console.log(obj1);
+// console.log(obj === obj1);
+
+// ✅ Task 09
+// const numbers = [1, 2, 3];
+// const [first, ...args] = numbers;
+// console.log(args);
+
+// ✅ Task 10
+// const obj = {
+//   a: 1,
+//   b: `abc`,
+//   c: false,
+// };
+// const { a, ...args } = obj;
+// console.log(args);
+
+// ✅ Task 11
+// const first = { a: 1, b: 2 };
+// const second = { a: 3, c: 4 };
+// const third = {
+//   a: 5,
+//   ...first,
+//   ...second,
+//   c: 6,
+// };
+// console.log(third);
+
+// ✅ Task 12
+// const names = ["Alice", "Kate", "Emma"];
+// function foo(first, second, third) {
+//   console.log("first", first);
+//   console.log("second", second);
+//   console.log("third", third);
+// }
+// foo(...names);
+
+// ✅ Task 13
+// const user = {
+//   id: 1,
+//   username: "harry_potter",
+//   profile: {
+//     name: "Harry",
+//     surname: "Potter",
+//     age: 25,
+//   },
+// };
+// const {
+//   username,
+//   profile: { name, surname },
+// } = user;
+// console.log(`Ім'я користувача: ${name}`);
+// console.log(`Прізвище користувача: ${surname}`);
+// console.log(`Ім'я користувача (за нікнеймом): ${username}`);
+
+// ✅ Task 14
+// const product = {
+//   name: "Smart TV",
+//   price: 25000,
+//   category: "Electronics",
+//   details: {
+//     brand: "Samsung",
+//     color: "Black",
+//     weight: "15.5",
+//   },
+// };
+// function displayProductInfo({
+//   name,
+//   price,
+//   category,
+//   details: { brand, color, weight },
+// }) {
+//   console.log(`Назва товару: ${name}`);
+//   console.log(`Ціна: ${price} грн`);
+//   console.log(`Категорія: ${category}`);
+//   console.log("Деталі:");
+//   console.log(`- Бренд: ${brand}`);
+//   console.log(`- Колір: ${color}`);
+//   console.log(`- Вага: ${weight} кг`);
+// }
+// displayProductInfo(product);
+
+// ✅ Task 15
+// function createContact(partialContact) {
+//   return {
+//     id: Math.floor(Math.random() * 1000),
+//     createdAt: new Date(),
+//     list: "default",
+//     ...partialContact,
+//   };
+// }
+// console.log(
+//   createContact({
+//     name: "Mango",
+//     email: "mango@mail.com",
+//     list: "friends",
+//   })
+// );
+
+// ✅ Task 16
+// function transformUsername({ firstName, lastName, ...props }) {
+//   return {
+//     fullName: `${firstName} ${lastName}`,
+//     ...props,
+//   };
+// }
+// console.log(
+//   transformUsername({
+//     id: 1,
+//     firstName: "Jacob",
+//     lastName: "Mercer",
+//     email: "j.mercer@mail.com",
+//     friendCount: 40,
+//   })
+// );
+// console.log(
+//   transformUsername({
+//     id: 2,
+//     firstName: "Adrian",
+//     lastName: "Cross",
+//     email: "a.cross@mail.com",
+//     friendCount: 20,
+//   })
+// );
+
+// ✅ Task 17
+// function calculateHousePerimetr({ sideA, sideB, sideC, sideD }) {
+//   const perimetr = sideA + sideB + sideC + sideD;
+//   return perimetr;
+// }
+// const house = {
+//   sideA: 10,
+//   sideB: 15,
+//   sideC: 10,
+//   sideD: 15,
+// };
+// const perimetr = calculateHousePerimetr(house);
+// console.log(`Периметр будинку: ${perimetr}`);
+
+// ✅ ✅ Homework 03
+
+// ✅ Task 01
