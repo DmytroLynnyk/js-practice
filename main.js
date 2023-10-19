@@ -1334,7 +1334,6 @@
 // console.log(`Blue: ${blue}`); // "Blue: 255"
 
 // ✅ ✅ Mentor practice 03
-
 // ✅ Task 01
 // const products = [{ name: "apple" }, { name: "orange" }, { name: "tomato" }];
 // for (const product of products) {
@@ -2680,5 +2679,275 @@
 //   .flatMap((student) => student.courses)
 //   .filter((course, index, array) => array.indexOf(course) === index)
 //   .sort((a, b) => a.localeCompare(b));
-
 // console.log(uniqueSortedCourses); // ['біологія', 'інформатика', 'література', 'математика', 'фізика']
+
+// ✅ ✅ Mentor practice 04
+// ✅ Task 01
+// const person = {
+//   userName: "Kate",
+// };
+// const foo = (key, value, obj) => {
+//   const newObj = { ...obj };
+//   newObj[key] = value;
+//   return newObj;
+// };
+// const result = foo("age", 25, person);
+// console.log("result", result);
+// console.log("person", person);
+
+// ✅ Task 02
+// function foo(a) {
+//   const random = Math.random();
+//   return a * random;
+// }
+// const res = foo(5);
+// console.log(res);
+
+// ✅ Task 03
+// function foo(a, random) {
+//   return a * random;
+// }
+// const random = Math.random();
+// const res = foo(5, random);
+// console.log(res);
+
+// ✅ Task 04
+// const users = [
+//   { id: 1, name: "John", age: 28, skills: ["JavaScript", "HTML", "CSS"] },
+//   { id: 2, name: "Alice", age: 32, skills: ["Python", "Data Analysis"] },
+//   { id: 3, name: "Bob", age: 24, skills: ["JavaScript", "React", "Node.js"] },
+//   { id: 4, name: "Emily", age: 40, skills: ["Java", "Spring"] },
+//   { id: 5, name: "David", age: 22, skills: ["C++", "C#"] },
+// ];
+// const names = users.map((user) => foo(user));
+// function foo(user) {
+//   return user.name;
+// }
+// console.log(names);
+
+// ✅ Task 05
+// const names = users.map((user) => {
+//   return {
+//     color: "green",
+//     ...user,
+//   };
+// });
+// console.log(names);
+
+// ✅ Task 06
+// const res = users.flatMap(({ skills }) => skills);
+// console.log(res);
+
+// ✅ Task 07
+// const arr = [1, 2, 3, [4, [5, [85]]]];
+// const res = arr.flat(2);
+// console.log(res);
+
+// ✅ Task 08
+// const result = users.filter(({ age }) => age > 30);
+// console.log(result);
+
+// ✅ Task 09
+// const skills = users.flatMap(({ skills }) => skills);
+// const uniqSkill = skills.filter((skill, index, arr) => {
+//   return arr.indexOf(skill) === index;
+// });
+// console.log(skills);
+// console.log(uniqSkill);
+
+// ✅ Task 10
+// const result = users.find(({ skills }) => skills.includes("JavaScript"));
+// console.log(result);
+
+// ✅ Task 11
+// const idx = users.findIndex(({ skills }) => skills.includes("JavaScript"));
+// console.log(idx);
+
+// ✅ Task 12
+// const res = users.some(({ skills }) => skills.includes("JavaScript"));
+// console.log(res);
+
+// ✅ Task 13
+// const res = users.every(({ age }) => age > 20 && age <= 40);
+// console.log(res);
+
+// ✅ Task 14
+// const sort = users.sort((a, b) => b.age - a.age);
+// console.log(sort);
+
+// ✅ Task 15
+// const res = users.sort((a, b) => a.name.localeCompare(b.name));
+// console.log(res);
+
+// ✅ Task 16
+// const res = users.reduce((acc, user, index, arr) => acc + user.age, 0);
+// console.log(res);
+
+// ✅ Task 17
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+// const tags = tweets.reduce((acc, tweet) => {
+//   acc.push(...tweet.tags);
+//   return acc;
+// }, []);
+// const uniqTags = tags.reduce((acc, tag) => {
+//   if (!acc.hasOwnProperty(tag)) {
+//     acc[tag] = 0;
+//   }
+//   acc[tag] += 1;
+//   return acc;
+// }, {});
+// console.log(uniqTags);
+
+// ✅ Task 18
+// const students = [
+//   { name: "John", grades: [80, 85, 90] },
+//   { name: "Alice", grades: [70, 80, 75] },
+//   { name: "Bob", grades: [95, 92, 88] },
+//   { name: "Emily", grades: [85, 88, 90] },
+//   { name: "David", grades: [90, 95, 92] },
+// ];
+// function getAverage(arr) {
+//   const result = arr.map(({ name, grades }) => {
+//     const total = grades.reduce((acc, item) => acc + item, 0);
+//     const obj = {
+//       name,
+//       average: Math.floor(total / grades.length),
+//     };
+//     return obj;
+//   });
+//   return result;
+// }
+// console.log(getAverage(students));
+
+// ✅ Task 19
+// const students = [
+//   { name: "John", age: 20, gpa: 3.8 },
+//   { name: "Alice", age: 21, gpa: 3.2 },
+//   { name: "Bob", age: 19, gpa: 3.5 },
+//   { name: "Emily", age: 22, gpa: 3.9 },
+//   { name: "David", age: 20, gpa: 3.7 },
+// ];
+// function getAdult(arr) {
+//   const res = arr.filter((student) => student.age > 20);
+//   return res;
+// }
+// console.log(getAdult(students));
+
+// ✅ Task 20
+// const books = [
+//   {
+//     title: "JavaScript: The Good Parts",
+//     author: "Douglas Crockford",
+//     year: 2008,
+//   },
+//   {
+//     title: "Clean Code: A Handbook of Agile Software Craftsmanship",
+//     author: "Robert C. Martin",
+//     year: 2008,
+//   },
+//   {
+//     title: "The Pragmatic Programmer: Your Journey to Mastery",
+//     author: "Andrew Hunt, David Thomas",
+//     year: 1999,
+//   },
+//   {
+//     title: "Design Patterns: Elements of Reusable Object-Oriented Software",
+//     author: "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+//     year: 1994,
+//   },
+//   {
+//     title: "Refactoring: Improving the Design of Existing Code",
+//     author: "Martin Fowler",
+//     year: 1999,
+//   },
+// ];
+// function getBook(arr, title) {
+//   const book = arr.find((item) => item.title === title);
+//   console.log(book);
+//   return book || "Not find";
+// }
+// console.log(getBook(books, "JavaScript: The Good Parts"));
+
+// ✅ Task 21
+// const products = [
+//   { id: 1, name: "T-shirt", price: 20, quantity: 3 },
+//   { id: 2, name: "Jeans", price: 50, quantity: 2 },
+//   { id: 3, name: "Sneakers", price: 80, quantity: 1 },
+//   { id: 4, name: "Hat", price: 15, quantity: 4 },
+//   { id: 5, name: "Socks", price: 5, quantity: 6 },
+// ];
+// function getTotal(arr) {
+//   const total = arr.reduce((acc, { price, quantity }) => {
+//     acc += price * quantity;
+//     return acc;
+//   }, 0);
+//   return total;
+// }
+// console.log(getTotal(products));
+
+// ✅ Task 22
+// const books = [
+//   {
+//     title: "JavaScript: The Good Parts",
+//     author: "Douglas Crockford",
+//     year: 2008,
+//   },
+//   {
+//     title: "Clean Code: A Handbook of Agile Software Craftsmanship",
+//     author: "Robert C. Martin",
+//     year: 2008,
+//   },
+//   {
+//     title: "The Pragmatic Programmer: Your Journey to Mastery",
+//     author: "Andrew Hunt, David Thomas",
+//     year: 1999,
+//   },
+//   {
+//     title: "Design Patterns: Elements of Reusable Object-Oriented Software",
+//     author: "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+//     year: 1994,
+//   },
+//   {
+//     title: "Refactoring: Improving the Design of Existing Code",
+//     author: "Martin Fowler",
+//     year: 1999,
+//   },
+// ];
+// function sortDesc(arr) {
+//   // const res = [...arr].sort((a, b) => b.year - a.year);
+//   // return res;
+//   return [...arr].sort((a, b) => b.year - a.year);
+// }
+// console.log(sortDesc(books));
+
+// ✅ Task 23
+// const products = [
+//   { id: 2, name: "Banana", price: 0.99 },
+//   { id: 1, name: "Apple", price: 1.99 },
+//   { id: 3, name: "Orange", price: 2.49 },
+//   { id: 4, name: "Grapes", price: 3.99 },
+// ];
+// function getProducts(arr) {
+//   return arr
+//     .filter(({ price }) => price < 2)
+//     .map(({ name }) => name)
+//     .sort((a, b) => a.localeCompare(b));
+// }
+// console.log(getProducts(products));
+
+// ✅ Task 24
+// const str = "absdabsrgbadgtdswwbetflg";
+// const result = str.split("").reduce((acc, item) => {
+//   if (!acc.hasOwnProperty(item)) {
+//     acc[item] = 0;
+//   }
+//   acc[item] += 1;
+//   return acc;
+// }, {});
+// console.log(result);
