@@ -3015,3 +3015,553 @@
 // pizzaPalace.order("Vienna", makePizza, onOrderError);
 
 // ✅ Task 05
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+//   orderedItems.forEach((number) => {
+//     totalPrice += number;
+//   });
+//   // Change code above this line
+//   return totalPrice;
+// }
+
+// ✅ Task 06
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// ✅ Task 07
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+//   firstArray.forEach((item) => {
+//     if (secondArray.includes(item)) {
+//       commonElements.push(item);
+//     }
+//   });
+//   return commonElements;
+//   // Change code above this line
+// }
+
+// ✅ Task 08
+// // Change code below this line
+// const calculateTotalPrice = (quantity, pricePerItem) => {
+//   // Change code above this line
+//   return quantity * pricePerItem;
+// };
+
+// ✅ Task 09
+// // Change code below this line
+// const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+// // Change code above this line
+
+// ✅ Task 10
+// // Change code below this line
+// const calculateTotalPrice = (orderedItems) => {
+//   let totalPrice = 0;
+//   orderedItems.forEach((item) => {
+//     totalPrice += item;
+//   });
+//   return totalPrice;
+// };
+// // Change code above this line
+
+// ✅ Task 11
+// // Change code below this line
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+//   // Change code above this line
+//   return filteredNumbers;
+// };
+
+// ✅ Task 12
+// // Change code below this line
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+//   firstArray.forEach((element) => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+//   // Change code above this line
+//   return commonElements;
+// };
+
+// ✅ Task 13
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newArr = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       newArr.push(numbers[i] + value);
+//     } else {
+//       newArr.push(numbers[i]);
+//     }
+//   }
+//   return newArr;
+//   // Change code above this line
+// }
+
+// ✅ Task 14
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// // Change code below this line
+// const planetsLengths = planets.map((planet) => planet.length);
+
+// ✅ Task 15
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+// const titles = books.map((book) => book.title);
+
+// ✅ Task 16
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism"],
+//   },
+// ];
+// // Change code below this line
+// const genres = books.flatMap((book) => book.genres);
+
+// ✅ Task 17
+// // Change code below this line
+// const getUserNames = (users) => {
+//   const userNames = [];
+//   users.map(({ name }) => userNames.push(name));
+//   return userNames;
+// };
+// // Change code above this line
+
+// ✅ Task 18
+// // Change code below this line
+// const getUserEmails = (users) => {
+//   const userEmails = [];
+//   users.map(({ email }) => userEmails.push(email));
+//   return userEmails;
+// };
+// // Change code above this line
+
+// ✅ Task 19
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// // Change code below this line
+// const evenNumbers = numbers.filter((item) => item % 2 === 0);
+// const oddNumbers = numbers.filter((item) => item % 2 !== 0);
+
+// ✅ Task 20
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction", "mysticism"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism", "adventure"],
+//   },
+// ];
+// // Change code below this line
+// const allGenres = books.flatMap((book) => book.genres);
+// const uniqueGenres = allGenres.filter(
+//   (gener, index, array) => array.indexOf(gener) === index
+// );
+
+// ✅ Task 21
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// const MIN_RATING = 8;
+// const AUTHOR = "Bernard Cornwell";
+// // Change code below this line
+// const topRatedBooks = books.filter(({ rating }) => rating >= MIN_RATING);
+// const booksByAuthor = books.filter(({ author }) => author === AUTHOR);
+
+// ✅ Task 22
+// // Change code below this line
+// const getUsersWithEyeColor = (users, color) => {
+//   const result = users.filter((user) => user.eyeColor === color);
+//   return result;
+// };
+// // Change code above this line
+
+// ✅ Task 23
+// // Change code below this line
+// const getUsersWithAge = (users, minAge, maxAge) => {
+//   const result = users.filter(
+//     (user) => user.age >= minAge && user.age <= maxAge
+//   );
+//   return result;
+// };
+// // Change code above this line
+
+// ✅ Task 24
+// // Change code below this line
+// const getUsersWithFriend = (users, friendName) => {
+//   const result = users.filter(({ friends }) => friends.includes(friendName));
+//   return result;
+// };
+// // Change code above this line
+
+// ✅ Task 25
+// // Change code below this line
+// const getFriends = (users) => {
+//   const result = users
+//     .flatMap(({ friends }) => friends)
+//     .filter((item, index, arr) => arr.indexOf(item) === index);
+//   return result;
+// };
+// // Change code above this line
+
+// ✅ Task 26
+// // Change code below this line
+// const getActiveUsers = (users) => {
+//   const result = users.filter(({ isActive }) => isActive === true);
+//   return result;
+// };
+// // Change code above this line
+
+// ✅ Task 27
+// // Change code below this line
+// const getInactiveUsers = (users) => {
+//   const result = users.filter(({ isActive }) => isActive === false);
+//   return result;
+// };
+// // Change code above this line
+
+// ✅ Task 28
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+// ];
+// const BOOK_TITLE = "The Dream of a Ridiculous Man";
+// const AUTHOR = "Robert Sheckley";
+// // Change code below this line
+// const bookWithTitle = books.find(({ title }) => title === BOOK_TITLE);
+// const bookByAuthor = books.find(({ author }) => author === AUTHOR);
+
+// ✅ Task 29
+// // Change code below this line
+// const getUserWithEmail = (users, email) => {
+//   const result = users.find((user) => user.email === email);
+//   return result;
+// };
+// // Change code above this line
+
+// ✅ Task 30
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
+// const eachElementInFirstIsEven = firstArray.every((item) => item % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every((item) => item % 2 !== 0);
+// const eachElementInSecondIsEven = secondArray.every((item) => item % 2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every((item) => item % 2 !== 0);
+// const eachElementInThirdIsEven = thirdArray.every((item) => item % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every((item) => item % 2 !== 0);
+
+// ✅ Task 31
+// // Change code below this line
+// const isEveryUserActive = (users) => {
+//   const result = users.every(({ isActive }) => isActive === true);
+//   return result;
+// };
+// // Change code above this line
+
+// ✅ Task 32
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change below this line
+// const anyElementInFirstIsEven = firstArray.some((item) => item % 2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some((item) => item % 2 !== 0);
+// const anyElementInSecondIsEven = secondArray.some((item) => item % 2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some((item) => item % 2 !== 0);
+// const anyElementInThirdIsEven = thirdArray.some((item) => item % 2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some((item) => item % 2 !== 0);
+
+// ✅ Task 33
+// // Change code below this line
+// const isAnyUserActive = (users) => {
+//   const result = users.some(({ isActive }) => isActive === true);
+//   return result;
+// };
+// // Change code above this line
+
+// ✅ Task 34
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+// const totalPlayTime = playtimes.reduce((startValue, number) => {
+//   return startValue + number;
+// }, 0);
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// ✅ Task 35
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => {
+//   return total + player.playtime / player.gamesPlayed;
+// }, 0);
+
+// ✅ Task 36
+// // Change code below this line
+// const calculateTotalBalance = (users) => {
+//   const result = users.reduce((total, { balance }) => {
+//     return total + balance;
+//   }, 0);
+//   return result;
+// };
+// // Change code above this line
+
+// ✅ Task 37
+// // Change code below this line
+// const getTotalFriendCount = (users) => {
+//   const result = users.reduce((total, { friends }) => {
+//     return total + friends.length;
+//   }, 0);
+//   return result;
+// };
+// // Change code above this line
+
+// ✅ Task 38
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // Change code below this line
+// const ascendingReleaseDates = [...releaseDates].sort();
+// const alphabeticalAuthors = [...authors].sort();
+
+// ✅ Task 39
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Change code below this line
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// ✅ Task 40
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+// // Change code below this line
+// const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
+// ✅ Task 41
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+// const sortedByAuthorName = [...books].sort((firstBook, secondBook) =>
+//   firstBook.author.localeCompare(secondBook.author)
+// );
+// const sortedByReversedAuthorName = [...books].sort((firstBook, secondBook) =>
+//   secondBook.author.localeCompare(firstBook.author)
+// );
+// const sortedByAscendingRating = [...books].sort(
+//   (firstBook, secondBook) => firstBook.rating - secondBook.rating
+// );
+// const sortedByDescentingRating = [...books].sort(
+//   (firstBook, secondBook) => secondBook.rating - firstBook.rating
+// );
+
+// ✅ Task 42
+// // Change code below this line
+// const sortByAscendingBalance = (users) => {
+//   return [...users].sort(
+//     (firstUser, secondUser) => firstUser.balance - secondUser.balance
+//   );
+// };
+// // Change code above this line
+
+// ✅ Task 43
+// // Change code below this line
+// const sortByDescendingFriendCount = (users) => {
+//   return [...users].sort(
+//     (firstUser, secondUser) =>
+//       secondUser.friends.length - firstUser.friends.length
+//   );
+// };
+// // Change code above this line
+
+// ✅ Task 44
+// // Change code below this line
+// const sortByName = (users) => {
+//   return [...users].sort((firstUser, secondUser) =>
+//     firstUser.name.localeCompare(secondUser.name)
+//   );
+// };
+// // Change code above this line
+
+// ✅ Task 45
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+// const names = books
+//   .filter(({ rating }) => rating > MIN_BOOK_RATING)
+//   .map(({ author }) => author)
+//   .sort((firstAuthor, secondAuthor) => firstAuthor.localeCompare(secondAuthor));
+
+// ✅ Task 46
+// // Change code below this line
+// const getNamesSortedByFriendCount = (users) => {
+//   return [...users]
+//     .sort(
+//       (firstUser, secondUser) =>
+//         firstUser.friends.length - secondUser.friends.length
+//     )
+//     .map(({ name }) => name);
+// };
+// // Change code above this line
+
+// ✅ Task 47
+// // Change code below this line
+// const getSortedFriends = (users) => {
+//   return [...users]
+//     .flatMap(({ friends }) => friends)
+//     .filter((item, index, arr) => arr.indexOf(item) === index)
+//     .sort((a, b) => a.localeCompare(b));
+// };
+// // Change code above this line
+
+// ✅ Task 48
+// // Change code below this line
+// const getTotalBalanceByGender = (users, gender) => {
+//   return [...users]
+//     .filter((user) => user.gender === gender)
+//     .reduce((total, { balance }) => {
+//       return total + balance;
+//     }, 0);
+// };
+// // Change code above this line
