@@ -4438,3 +4438,119 @@
 // console.log(mango.blacklistedEmails); // ["poly@mail.com"]
 // console.log(mango.isBlacklisted("mango@mail.com")); // false
 // console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+// ✅ ✅ ✅ Module 06
+
+// ✅ ✅ Abstract 06
+
+// ✅ Task 01
+// console.log(document);
+// const body = document.body;
+// console.log(body);
+// const list = document.querySelector(".list");
+// console.log(list);
+// const firstListItem = list.firstElementChild;
+// console.log(firstListItem);
+// const lastListItem = list.lastElementChild;
+// console.log(lastListItem);
+// const listItems = list.children;
+// console.log(listItems);
+
+// ✅ Task 02
+// const listWithId = document.querySelector("#menu");
+// listWithId.style.textTransform = "uppercase";
+// listWithId.style.fontSize = "24px";
+// console.log(listWithId);
+// const listWithClass = document.querySelector(".menu");
+// console.log(listWithClass);
+// const menuItemsByTagName = document.querySelectorAll("li");
+// console.log(menuItemsByTagName);
+// const menuItemsByClass = document.querySelectorAll(".menu-item");
+// console.log(menuItemsByClass);
+// const firstMenuItem = document.querySelector(".menu-item");
+// firstMenuItem.style.color = "tomato";
+// console.log(firstMenuItem);
+
+// ✅ Task 03
+// const image = document.querySelector(".image");
+// console.log(image.src); // https://picsum.photos/id/9/320/240
+// console.log(image.alt); // A laptop
+// image.src = "https://picsum.photos/id/13/640/480";
+// image.alt = "River bank";
+
+// ✅ Task 04
+// const textEl = document.querySelector(".article-text");
+// console.log(textEl.textContent); // text inside p.article-text
+// const titleEl = document.querySelector(".article-title");
+// titleEl.textContent = "Welcome to Bahamas!";
+
+// ✅ Task 05
+// const link = document.querySelector(".link");
+// console.log(link.classList);
+// const hasActiveClass = link.classList.contains("is-active");
+// console.log(`hasActiveClass - ${hasActiveClass}`);
+// link.classList.add("special");
+// console.log(link.classList);
+// link.classList.remove("is-active");
+// console.log(link.classList);
+// link.classList.toggle("is-active");
+// console.log(link.classList);
+// link.classList.replace("special", "regular");
+// console.log(link.classList);
+
+// ✅ Task 06
+// const button = document.querySelector(".btn");
+// button.style.backgroundColor = "teal";
+// button.style.fontSize = "24px";
+// button.style.textAlign = "center";
+// console.log(button.style); // inline styles object
+
+// ✅ Task 07
+// const image = document.querySelector(".image");
+// console.log(image.attributes); // NamedNodeMap {0: class, 1: src, 2: alt, length: 3}
+// console.log(image.hasAttribute("src")); // true
+// console.log(image.getAttribute("alt")); // "Rocks and waterfall"
+// image.setAttribute("alt", "Amazing nature");
+// console.log(image.getAttribute("alt")); // Amazing nature
+
+// ✅ Task 08
+// const saveBtn = document.querySelector('.editor button[data-action="save"]');
+// const closeBtn = document.querySelector('.editor button[data-action="close"]');
+// console.log(saveBtn.dataset.action); //save
+// console.log(closeBtn.dataset.action); //close
+
+// ✅ Task 09
+// const heading = document.createElement("h1");
+// console.log(heading); // <h1></h1>
+// heading.textContent = "This is a heading";
+// console.log(heading); // <h1>This is a heading</h1>
+// const image = document.createElement("img");
+// image.src = "https://placeimg.com/640/480/nature";
+// image.alt = "Nature";
+// console.log(image); // <img src="https://placeimg.com/640/480/nature" alt="Nature" />
+
+// ✅ Task 10
+// const list = document.querySelector(".usernames");
+// // Adds an item to the end of the list
+// const lastItem = document.createElement("li");
+// lastItem.textContent = "Poly";
+// list.append(lastItem);
+// // Adds an item to the beginning of the list
+// const firstItem = document.createElement("li");
+// firstItem.textContent = "Ajax";
+// list.prepend(firstItem);
+// // Adds a title before the list
+// const title = document.createElement("h2");
+// title.textContent = "USERNAMES";
+// list.before(title);
+// // Adds a paragraph after the list
+// const text = document.createElement("p");
+// text.textContent =
+//   "Lorem ipsum dolor sit amet";
+// list.after(text);
+
+// ✅ Task 11
+// const text = document.querySelector(".text");
+// text.remove();
+
+// ✅ Task 12
