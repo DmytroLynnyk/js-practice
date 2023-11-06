@@ -4790,3 +4790,47 @@
 // textInput.addEventListener("blur", () => {
 //   textInput.value = "";
 // });
+
+// ✅ ✅ Mentor practice 05
+
+// ✅ Task 01
+// const makeShef = function (name) {
+//   return function makeDish(dish) {
+//     console.log(`${name} is cooking ${dish}`);
+//   };
+// };
+// const mango = makeShef("Mango");
+// mango("apple pie");
+// mango("beef stew");
+// const poly = makeShef("Poly");
+// poly("panckakes");
+// poly("eggs and becon");
+// makeShef("Lary")("cakes");
+// makeShef("Mike")("toasts");
+
+// ✅ Task 02
+// const counter = () => {
+//   let count = 0;
+//   return () => (count += 1);
+// };
+// const fn = counter();
+// console.log(fn());
+// console.log(fn());
+// console.log(fn());
+// const fnfn = counter();
+// console.log(fnfn());
+// console.log(fnfn());
+// console.log(fnfn());
+// console.log(fnfn());
+
+// ✅ Task 03
+// const counter = () => {
+//   let count = 0;
+//   return (text) => `${text} ${(count += 1)}`;
+// };
+// const fn = counter();
+// console.log(fn("Number"));
+// console.log(fn("Number"));
+// console.log(fn("Number"));
+
+// ✅ Task 04
