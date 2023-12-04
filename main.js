@@ -5048,3 +5048,412 @@
 //     throttledOutput.textContent = eventCounter.throttled;
 //   }, 300)
 // );
+
+// ✅ ✅ ✅ Module 09
+
+// ✅ ✅ Abstract 09
+
+// ✅ Task 01
+// // Will run first
+// console.log("First log");
+// setTimeout(() => {
+//   // Will run last, after 2000 milliseconds
+//   console.log("Second log");
+// }, 2000);
+// // Will run second
+// console.log("Third log");
+
+// ✅ Task 02
+// const button = document.querySelector("button");
+// const onClick = () => {
+//   const timerId = setTimeout(() => {
+//     console.log("I love async JS!");
+//   }, 2000);
+
+//   console.log(timerId);
+// };
+// button.addEventListener("click", onClick);
+
+// ✅ Task 03
+// const greet = () => {
+//   console.log("Hello!");
+// };
+// const timerId = setTimeout(greet, 3000);
+// clearTimeout(timerId);
+
+// ✅ Task 04
+// const startBtn = document.querySelector(".js-start");
+// const stopBtn = document.querySelector(".js-stop");
+// let timerId = null;
+// startBtn.addEventListener("click", () => {
+//   timerId = setInterval(() => {
+//     console.log(`I love async JS!  ${Math.random()}`);
+//   }, 1000);
+// });
+// stopBtn.addEventListener("click", () => {
+//   clearInterval(timerId);
+//   console.log(`Interval with id ${timerId} has stopped!`);
+// });
+
+// ✅ Task 05
+// const date = new Date();
+// console.log(date);
+// // "Fri Jun 18 2021 15:01:35 GMT+0300 (Eastern European Summer Time)"
+// console.log(date.toString());
+// // "Fri Jun 18 2021 15:01:35 GMT+0300 (Eastern European Summer Time)"
+
+// ✅ Task 06
+// console.log(new Date(0));
+// // "Thu Jan 01 1970 03:00:00 GMT+0300 (Eastern European Standard Time)"
+// console.log(new Date(15000));
+// // "Thu Jan 01 1970 03:00:15 GMT+0300 (Eastern European Standard Time)"
+
+// ✅ Task 07
+// const date = new Date();
+// console.log(date.getTime()); // 1624021654154
+
+// ✅ Task 08
+// const teamMeetingDate = new Date("March 16, 2030");
+// console.log(teamMeetingDate);
+// // "Mon Mar 16 2030 00:00:00 GMT+0200 (Eastern European Standard Time)"
+// const preciseTeamMeetingDate = new Date("March 16, 2030 14:25:00");
+// console.log(preciseTeamMeetingDate);
+// // "Mon Mar 16 2030 14:25:00 GMT+0200 (Eastern European Standard Time)"
+
+// ✅ Task 09
+// const date = new Date(2030, 2, 16, 14, 25, 0, 0);
+// console.log(date);
+// // Sat Mar 16 2030 14:25:00 GMT+0200 (Eastern European Standard Time)
+
+// ✅ Task 10
+// const date = new Date();
+// console.log("Date: ", date);
+// // Повертає день місяця від 1 до 31
+// console.log("getDate(): ", date.getDate());
+// // Повертає день тижня від 0 до 6
+// console.log("getDay(): ", date.getDay());
+// // Повертає місяць від 0 до 11
+// console.log("getMonth(): ", date.getMonth());
+// // Повертає рік з 4 цифр
+// console.log("getFullYear(): ", date.getFullYear());
+// // Повертає години
+// console.log("getHours(): ", date.getHours());
+// // Повертає хвилини
+// console.log("getMinutes(): ", date.getMinutes());
+// // Повертає секунди
+// console.log("getSeconds(): ", date.getSeconds());
+// // Повертає мілісекунди
+// console.log("getMilliseconds(): ", date.getMilliseconds());
+
+// ✅ Task 11
+// const date = new Date();
+// console.log("Date: ", date);
+// // Повертає день місяця від 1 до 31
+// console.log("getUTCDate(): ", date.getUTCDate());
+// // Повертає день тижня від 0 до 6
+// console.log("getUTCDay(): ", date.getUTCDay());
+// // Повертає місяць від 0 до 11
+// console.log("getUTCMonth(): ", date.getUTCMonth());
+// // Повертає рік з 4 цифр
+// console.log("getUTCFullYear(): ", date.getUTCFullYear());
+// // Повертає години
+// console.log("getUTCHours(): ", date.getUTCHours());
+// // Повертає хвилини
+// console.log("getUTCMinutes(): ", date.getUTCMinutes());
+// // Повертає секунди
+// console.log("getUTCSeconds(): ", date.getUTCSeconds());
+// // Повертає мілісекунди
+// console.log("getUTCMilliseconds(): ", date.getUTCMilliseconds());
+
+// ✅ Task 12
+// const date = new Date("March 16, 2030 14:25:00");
+// date.setMinutes(50);
+// // "Sat Mar 16 2030 14:50:00 GMT+0200"
+// date.setFullYear(2040, 4, 8);
+// // "Tue May 08 2040 14:50:00 GMT+0300"
+
+// ✅ Task 13
+// const date = new Date("March 16, 2030 14:25:00");
+// date.toString();
+// // "Sat Mar 16 2030 14:25:00 GMT+0200 (Eastern European Standard Time)"
+// date.toTimeString();
+// // "14:25:00 GMT+0200 (Eastern European Standard Time)"
+// date.toLocaleTimeString();
+// // "2:25:00 PM"
+// date.toUTCString();
+// // "Sat, 16 Mar 2030 12:25:00 GMT"
+// date.toDateString();
+// // "Sat Mar 16 2030"
+// date.toISOString();
+// // "2030-03-16T12:25:00.000Z"
+// date.toLocaleString();
+// // "3/16/2030, 2:25:00 PM"
+// date.getTime();
+// // 1899894300000
+
+// ✅ Task 14
+// // Change value of isSuccess variable to call resolve or reject
+// const isSuccess = true;
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (isSuccess) {
+//       resolve("Success! Value passed to resolve function");
+//     } else {
+//       reject("Error! Error passed to reject function");
+//     }
+//   }, 2000);
+// });
+
+// ✅ Task 15
+// // Change value of isSuccess variable to call resolve or reject
+// const isSuccess = true;
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (isSuccess) {
+//       resolve("Success! Value passed to resolve function");
+//     } else {
+//       reject("Error! Error passed to reject function");
+//     }
+//   }, 2000);
+// });
+// // Will run first
+// console.log("Before promise.then()");
+// // Registering promise callbacks
+// promise.then(
+//   // onResolve will run third or not at all
+//   value => {
+//     console.log("onResolve call inside promise.then()");
+//     console.log(value); // "Success! Value passed to resolve function"
+//   },
+//   // onReject will run third or not at all
+//   error => {
+//     console.log("onReject call inside promise.then()");
+//     console.log(error); // "Error! Error passed to reject function"
+//   }
+// );
+// // Will run second
+// console.log("After promise.then()");
+
+// ✅ Task 16
+// // Change value of isSuccess variable to call resolve or reject
+// const isSuccess = true;
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (isSuccess) {
+//       resolve("Success! Value passed to resolve function");
+//     } else {
+//       reject("Error! Error passed to reject function");
+//     }
+//   }, 2000);
+// });
+// promise
+//   .then(value => {
+//     console.log(value);
+//   })
+//   .catch(error => {
+//     console.log(error);
+//   });
+
+// ✅ Task 17
+// // Change value of isSuccess variable to call resolve or reject
+// const isSuccess = true;
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (isSuccess) {
+//       resolve("Success! Value passed to resolve function");
+//     } else {
+//       reject("Error! Error passed to reject function");
+//     }
+//   }, 2000);
+// });
+// promise
+//   .then(value => console.log(value)) // "Success! Value passed to resolve function"
+//   .catch(error => console.log(error)) // "Error! Error passed to reject function"
+//   .finally(() => console.log("Promise settled")); // "Promise settled"
+
+// ✅ Task 18
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve(5);
+//   }, 2000);
+// });
+// promise
+//   .then((value) => {
+//     console.log(value); // 5
+//     return value * 2;
+//   })
+//   .then((value) => {
+//     console.log(value); // 10
+//     return value * 3;
+//   })
+//   .then((value) => {
+//     console.log(value); // 30
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(() => {
+//     console.log("Final task");
+//   });
+
+// ✅ Task 19
+// const fetchUserFromServer = (username, onSuccess, onError) => {
+//   console.log(`Fetching data for ${username}`);
+//   setTimeout(() => {
+//     // Change value of isSuccess variable to simulate request status
+//     const isSuccess = true;
+//     if (isSuccess) {
+//       onSuccess("success value");
+//     } else {
+//       onError("error");
+//     }
+//   }, 2000);
+// };
+// const onFetchSuccess = (user) => {
+//   console.log(user);
+// };
+// const onFetchError = (error) => {
+//   console.error(error);
+// };
+// fetchUserFromServer("Mango", onFetchSuccess, onFetchError);
+
+// ✅ Task 20
+// const fetchUserFromServer = (username) => {
+//   return new Promise((resolve, reject) => {
+//     console.log(`Fetching data for ${username}`);
+//     setTimeout(() => {
+//       // Change value of isSuccess variable to simulate request status
+//       const isSuccess = true;
+//       if (isSuccess) {
+//         resolve("success value");
+//       } else {
+//         reject("error");
+//       }
+//     }, 2000);
+//   });
+// };
+// fetchUserFromServer("Mango")
+//   .then((user) => console.log(user))
+//   .catch((error) => console.error(error));
+
+// ✅ Task 21
+// const makePromise = (text, delay) => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve(text), delay);
+//   });
+// };
+// const promiseA = makePromise("promiseA value", 1000);
+// const promiseB = makePromise("promiseB value", 3000);
+// Promise.all([promiseA, promiseB])
+//   .then((value) => console.log(value)) //["promiseA value", "promiseB value"]
+//   .catch((error) => console.log(error));
+
+// ✅ Task 22
+// const makePromise = (text, delay) => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve(text), delay);
+//   });
+// };
+// const promiseA = makePromise("promiseA value", 1000);
+// const promiseB = makePromise("promiseB value", 3000);
+// Promise.race([promiseA, promiseB])
+//   .then((value) => console.log(value)) // "promiseA value"
+//   .catch((error) => console.log(error));
+
+// ✅ Task 23
+// // Fulfilled promise
+// new Promise((resolve) => resolve("success value")).then((value) =>
+//   console.log(value)
+// );
+// Promise.resolve("success value").then((value) => console.log(value));
+// // Rejected promise
+// new Promise((resolve, reject) => reject("error")).catch((error) =>
+//   console.error(error)
+// );
+// Promise.reject("error").catch((error) => console.error(error));
+
+// ✅ Task 23
+// const makeGreeting = (guestName) => {
+//   if (guestName === "" || guestName === undefined) {
+//     return {
+//       success: false,
+//       message: "Guest name must not be empty",
+//     };
+//   }
+//   return {
+//     success: true,
+//     message: `Welcome ${guestName}`,
+//   };
+// };
+// const result = makeGreeting("Mango");
+// if (result.success) {
+//   console.log(result.message);
+// } else {
+//   console.error(result.message);
+// }
+
+// ✅ Task 24
+// const makeGreeting = (guestName, onSuccess, onError) => {
+//   if (guestName === "" || guestName === undefined) {
+//     return onError("Guest name must not be empty");
+//   }
+//   onSuccess(`Welcome ${guestName}`);
+// };
+// makeGreeting(
+//   "Mango",
+//   (greeting) => console.log(greeting),
+//   (error) => console.error(error)
+// );
+
+// ✅ Task 25
+// const makeGreeting = (guestName) => {
+//   if (guestName === "" || guestName === undefined) {
+//     return Promise.reject("Guest name must not be empty");
+//   }
+//   return Promise.resolve(`Welcome ${guestName}`);
+// };
+// makeGreeting("Mango")
+//   .then((greeting) => console.log(greeting))
+//   .catch((error) => console.error(error));
+
+// ✅ Task 26
+// console.log("script start");
+// setTimeout(function () {
+//   console.log("setTimeout");
+// }, 0);
+// Promise.resolve()
+//   .then(function () {
+//     console.log("promise1");
+//   })
+//   .then(function () {
+//     console.log("promise2");
+//   });
+// console.log("script end");
+
+// ✅ Task 27
+// // Let's get hold of those elements
+// var outer = document.querySelector(".outer");
+// var inner = document.querySelector(".inner");
+// // Let's listen for attribute changes on the
+// // outer element
+// new MutationObserver(function () {
+//   console.log("mutate");
+// }).observe(outer, {
+//   attributes: true,
+// });
+// // Here's a click listener…
+// function onClick() {
+//   console.log("click");
+//   setTimeout(function () {
+//     console.log("timeout");
+//   }, 0);
+//   Promise.resolve().then(function () {
+//     console.log("promise");
+//   });
+//   outer.setAttribute("data-random", Math.random());
+// }
+// // …which we'll attach to both elements
+// inner.addEventListener("click", onClick);
+// outer.addEventListener("click", onClick);
+
+// ✅ Task 28
